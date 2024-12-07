@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="overlay">
+        <img src="Images/images/kirthi.img.png"  class="profile-photo">
+        <h1>Keerthi Ramesh</h1>
+    </div>
+    
+    <!---------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/images/work01.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                    
+
+                        Hello! I'm a B.Tech graduate in Computer Science, fueled by ambition and enthusiasm. I have dreamt of carving out a career in the IT sector, and today, I proudly stand as a computer science graduate ready to embark on this journey. My curiosity doesn't stop there; I am also deeply interested in exploring cloud technologies and how they revolutionize the IT landscape. Driven by a passion for continuous learning and innovation, I am excited about the opportunities that lie ahead. My goal is to contribute meaningfully to the IT sector, leveraging my skills and knowledge to create impactful solutions. Welcome to my portfolio, a reflection of my dedication, skills, and aspirations in the dynamic world of information technology.
+                    </p>
+                    <div class="container">
+                        <div class="item" onclick="openTab(event, 'tab1')">Skills</div>
+                        <div class="item" onclick="openTab(event, 'tab2')">Experience</div>
+                        <div class="item" onclick="openTab(event, 'tab3')">Education</div>
+                    </div>
+                      
+                    <div id="tab1" class="tab-content">
+                        Web Development: <br>
+                        <div class="skill-item">
+                            <div class="symbol"><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">HTML</div>
+        <div class="symbol"><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">CSS</div>
+        <div class="symbol"><img src="https://cdn-icons-png.flaticon.com/512/919/919828.png" alt="JavaScript">JavaScript</div>
+                        </div>
+                    </div>
+                      <div id="tab2" class="tab-content"> Technical Writer - Cyber Security <BR> ValueMentor Infosec Private Ltd</div>
+                      <div id="tab3" class="tab-content"> B Tech in Computer Science Engineering (2019-2023) <BR> Sreepathy Institute of Management and Technology</div>
+                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------portfolio------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                 <img src="Images/images/work-1.png">
+                 <div class="layer">
+                    <h3> Netflix Clone Website</h3>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                 </div>
+            </div>
+            <div class="work">
+                <img src="Images/images/work-2.png">
+                <div class="layer">
+                    <h3> Weather App</h3>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                 </div>
+           </div>
+           
+       </div>
+        </div>
+        </div>
+    </div>
+    <!------------------Contact--------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i> kirti18310@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 7306702485</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/your-instagram-id" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <button onclick="window.location.href='https://valuementor-my.sharepoint.com/:b:/r/personal/keerthi_ramesh_valuementor_com/Documents/Desktop/Website/Keerthi-Ramesh.resume.pdf.pdf?csf=1&web=1&e=SjygKS  ' ">Download my CV</button>
+                </div>
+                <div class="contact-right">
+                    <form action="submit_form.php" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+<script>
+    function openMenu() {
+            document.getElementById('sideMenu').style.left = '0';
+        }
+
+        function closeMenu() {
+            document.getElementById('sideMenu').style.left = '-250px';
+        }
+    function openTab(event, tabId) {
+  
+  var items = document.getElementsByClassName('item');
+  for (var i = 0; i < items.length; i++) {
+    items[i].classList.remove('active-link');
+  }
+
+  
+  event.currentTarget.classList.add('active-link');
+
+  
+  var tabs = document.getElementsByClassName('tab-content');
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].style.display = 'none';
+  }
+
+  
+  document.getElementById(tabId).style.display = 'block';
+    }
+
+</script>
+</body>
+</html>
+
